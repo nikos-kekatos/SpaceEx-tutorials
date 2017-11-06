@@ -1,7 +1,4 @@
 
-
-
-
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
@@ -15,22 +12,9 @@
       
       
       
-        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+        <link rel="shortcut icon" href="../assets/images/favicon.png">
       
-        <meta name="lang:clipboard.copied" content="Copied to clipboard">
-      
-        <meta name="lang:search.language" content="en">
-      
-        <meta name="lang:search.result.none" content="No matching documents">
-      
-        <meta name="lang:search.result.one" content="1 matching document">
-      
-        <meta name="lang:search.result.other" content="# matching documents">
-      
-        <meta name="lang:search.tokenizer" content="[\s\-]+">
-      
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.0.4">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.5">
     
     
       
@@ -38,14 +22,17 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-709eec9410.css">
+      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-769c285a91.css">
       
     
     
-      <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
-    
-    
       
+        
+        
+        
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
@@ -54,6 +41,9 @@
     
     
   </head>
+  
+  
+  
   
     <body>
   
@@ -71,11 +61,10 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://nikos-kekatos.github.io/SpaceEx-tutorials" title="SpaceEx-tutorials" class="md-header-nav__button md-logo">
-          
-            <i class="md-icon"></i>
-          
-        </a>
+        
+          <a href="https://nikos-kekatos.github.io/SpaceEx-tutorials" title="SpaceEx-tutorials" class="md-icon md-icon--home md-header-nav__button">
+          </a>
+        
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
@@ -92,21 +81,20 @@
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
             Type to start searching
           </div>
           <ol class="md-search-result__list"></ol>
@@ -115,7 +103,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -124,6 +111,7 @@
 </header>
     
     <div class="md-container">
+      
       
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
@@ -134,11 +122,9 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    <span class="md-nav__button md-logo">
-      
-        <i class="md-icon"></i>
-      
-    </span>
+    
+      <i class="md-icon md-icon--home md-nav__button"></i>
+    
     SpaceEx-tutorials
   </label>
   
@@ -213,22 +199,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bash-script" title="Bash script" class="md-nav__link">
-    Bash script
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#plot_verticesm-matlab" title="plot_vertices.m (Matlab)" class="md-nav__link">
-    plot_vertices.m (Matlab)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3plib-java" title="3PLIB (Java)" class="md-nav__link">
-    3PLIB (Java)
+  <a href="#plot_2d_verticesm-matlab" title="plot_2d_vertices.m (Matlab)" class="md-nav__link">
+    plot_2d_vertices.m (Matlab)
   </a>
   
 </li>
@@ -241,8 +213,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#plot_verticespy-python" title="plot_vertices.py (Python)" class="md-nav__link">
-    plot_vertices.py (Python)
+  <a href="#plot_2d_verticespy-pythonsagemath" title="plot_2d_vertices.py (Python/SageMath)" class="md-nav__link">
+    plot_2d_vertices.py (Python/SageMath)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bash-script" title="Bash script" class="md-nav__link">
+    Bash script
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3plib-java" title="3PLIB (Java)" class="md-nav__link">
+    3PLIB (Java)
   </a>
   
 </li>
@@ -289,22 +275,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bash-script" title="Bash script" class="md-nav__link">
-    Bash script
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#plot_verticesm-matlab" title="plot_vertices.m (Matlab)" class="md-nav__link">
-    plot_vertices.m (Matlab)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3plib-java" title="3PLIB (Java)" class="md-nav__link">
-    3PLIB (Java)
+  <a href="#plot_2d_verticesm-matlab" title="plot_2d_vertices.m (Matlab)" class="md-nav__link">
+    plot_2d_vertices.m (Matlab)
   </a>
   
 </li>
@@ -317,8 +289,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#plot_verticespy-python" title="plot_vertices.py (Python)" class="md-nav__link">
-    plot_vertices.py (Python)
+  <a href="#plot_2d_verticespy-pythonsagemath" title="plot_2d_vertices.py (Python/SageMath)" class="md-nav__link">
+    plot_2d_vertices.py (Python/SageMath)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bash-script" title="Bash script" class="md-nav__link">
+    Bash script
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3plib-java" title="3PLIB (Java)" class="md-nav__link">
+    3PLIB (Java)
   </a>
   
 </li>
@@ -339,20 +325,40 @@
                 
                 
                 <h1 id="plotting">Plotting</h1>
-<p>There exist different visualization alternatives for SpaceEx results. Here we present these alternatives and an illustrative example. </p>
-<h2 id="bash-script">Bash script</h2>
-<p>This solution is needs the tools: <code>graph</code> and <code>pdftoppm</code> added to your path. Also <code>spaceex</code> should be accessible from your path. The script works by transforming the SpaceEx result to PDF and to PNG formats. </p>
-<p>Link: <a href="https://github.com/JuliaReach/ReachabilityBenchmarks/blob/master/models/SLICOT/iss/spaceex.sh">plot_gen.sh</a>. </p>
-<p>Written by Christian Schilling. </p>
-<h2 id="plot_verticesm-matlab"><code>plot_vertices.m</code> (Matlab)</h2>
-<h2 id="3plib-java"><code>3PLIB</code> (Java)</h2>
-<p>The project <a href="https://3plib.wordpress.com/">3PLIB</a> is a Java Library developed
-by Frédéric Viry. This library is specialized to planar projections of convex polyhedra. It was initially created to embed this feature in Java applications, and also provides a backend for visualization of high-dimensional reach set approximations computed with <a href="http://spaceex.imag.fr/">SpaceEx</a>.</p>
+<p>There are different options to visualize SpaceEx results. Here we present some
+alternatives. An illustrative example is presented in
+<a href="https://nikos-kekatos.github.io/SpaceEx-tutorials/example/">Example</a>.</p>
+<h2 id="plot_2d_verticesm-matlab"><code>plot_2d_vertices.m</code> (Matlab)</h2>
+<p>There is a default script that can be downloaded from SpaceEx webpage,
+<a href="http://spaceex.imag.fr/sites/default/files/downloads/plot_2d_vertices.m">plot_2d_vertices.m</a>.</p>
+<p>A revised script with extra options is also available.</p>
+<p>Link: <a href="http://spaceex.imag.fr/sites/default/files/downloads/plot_2d_vertices.m">plot_2d_vertices.m</a>.</p>
+<p>Authors: Nikolaos Kekatos, Marcelo Forets.</p>
 <h2 id="lazysetsjl-julia"><code>LazySets.jl</code> (Julia)</h2>
-<p><code>LazySets.jl</code> is part of the <a href="https://github.com/juliareach">JuliaReach</a>, an online organisation for reachability computations for dynamical systems in <a href="https://julialang.org/">Julia</a>, a modern high-performance language for scientific computing.</p>
-<p>This is the more feature-rich plotting solution, since there are many plotting backends available.</p>
+<p>[LazySets.jl]https://github.com/juliareach/LazySets.jl) is part of <a href="https://github.com/juliareach">JuliaReach</a>, an online
+organization that develops tools for reachability computations of dynamical systems in <a href="https://julialang.org/">Julia</a>.</p>
+<p>This is the more feature-rich alternative, since there are many plotting backends
+available. The following example was obtained with the <code>Plotly</code> backend.</p>
 <p><img alt="assets/plot_plotly.png" src="../assets/plot_plotly.png" /></p>
-<h2 id="plot_verticespy-python"><code>plot_vertices.py</code> (Python)</h2>
+<p>Link: <a href="https://juliareach.github.io/LazySets.jl/latest/">LazySets.jl</a></p>
+<p>Authors: Marcelo Forets, Christian Schilling, Frédéric Viry.</p>
+<h2 id="plot_2d_verticespy-pythonsagemath"><code>plot_2d_vertices.py</code> (Python/SageMath)</h2>
+<p>This is a Python script that sequentially reads the polygons as polyhedra objects
+through SageMath, plots them in the same pair of axes.</p>
+<p>Author: Marcelo Forets.</p>
+<h2 id="bash-script">Bash script</h2>
+<p>This solution is needs the tools: <code>graph</code> and <code>pdftoppm</code> added to your path.
+Also <code>spaceex</code> should be accessible from your path. The script works by transforming
+the SpaceEx result to PDF and to PNG formats. </p>
+<p>Link: <a href="https://github.com/JuliaReach/ReachabilityBenchmarks/blob/master/models/SLICOT/iss/spaceex.sh">plot_gen.sh</a>. </p>
+<p>Author: Christian Schilling. </p>
+<h2 id="3plib-java"><code>3PLIB</code> (Java)</h2>
+<p>The project <a href="https://3plib.wordpress.com/">3PLIB</a> is a Java Library specialized
+to planar projections of convex polyhedra. It was initially created to embed this feature
+in Java applications, and also provides a backend for visualization of high-dimensional
+reach set approximations computed with <a href="http://spaceex.imag.fr/">SpaceEx</a>.</p>
+<p>Link: <a href="https://3plib.wordpress.com/">3PLIB</a></p>
+<p>Author: Frédéric Viry.</p>
                 
                   
                 
@@ -422,9 +428,10 @@ by Frédéric Viry. This library is specialized to planar projections of convex 
       
     </div>
     
-      <script src="../assets/javascripts/application-8e4952e681.js"></script>
+      <script src="../assets/javascripts/application-07b0fbb49b.js"></script>
       
-      <script>app.initialize({version:"0.17.1",url:{base:".."}})</script>
+      
+      <script>app.initialize({url:{base:".."}})</script>
       
     
     

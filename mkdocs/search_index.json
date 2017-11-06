@@ -47,42 +47,42 @@
         }, 
         {
             "location": "/plotting/", 
-            "text": "Plotting\n\n\nThere exist different visualization alternatives for SpaceEx results. Here we present these alternatives and an illustrative example. \n\n\nBash script\n\n\nThis solution is needs the tools: \ngraph\n and \npdftoppm\n added to your path. Also \nspaceex\n should be accessible from your path. The script works by transforming the SpaceEx result to PDF and to PNG formats. \n\n\nLink: \nplot_gen.sh\n. \n\n\nWritten by Christian Schilling. \n\n\nplot_vertices.m\n (Matlab)\n\n\n3PLIB\n (Java)\n\n\nThe project \n3PLIB\n is a Java Library developed\nby Fr\u00e9d\u00e9ric Viry. This library is specialized to planar projections of convex polyhedra. It was initially created to embed this feature in Java applications, and also provides a backend for visualization of high-dimensional reach set approximations computed with \nSpaceEx\n.\n\n\nLazySets.jl\n (Julia)\n\n\nLazySets.jl\n is part of the \nJuliaReach\n, an online organisation for reachability computations for dynamical systems in \nJulia\n, a modern high-performance language for scientific computing.\n\n\nThis is the more feature-rich plotting solution, since there are many plotting backends available.\n\n\n\n\nplot_vertices.py\n (Python)", 
+            "text": "Plotting\n\n\nThere are different options to visualize SpaceEx results. Here we present some\nalternatives. An illustrative example is presented in\n\nExample\n.\n\n\nplot_2d_vertices.m\n (Matlab)\n\n\nThere is a default script that can be downloaded from SpaceEx webpage,\n\nplot_2d_vertices.m\n.\n\n\nA revised script with extra options is also available.\n\n\nLink: \nplot_2d_vertices.m\n.\n\n\nAuthors: Nikolaos Kekatos, Marcelo Forets.\n\n\nLazySets.jl\n (Julia)\n\n\n[LazySets.jl]https://github.com/juliareach/LazySets.jl) is part of \nJuliaReach\n, an online\norganization that develops tools for reachability computations of dynamical systems in \nJulia\n.\n\n\nThis is the more feature-rich alternative, since there are many plotting backends\navailable. The following example was obtained with the \nPlotly\n backend.\n\n\n\n\nLink: \nLazySets.jl\n\n\nAuthors: Marcelo Forets, Christian Schilling, Fr\u00e9d\u00e9ric Viry.\n\n\nplot_2d_vertices.py\n (Python/SageMath)\n\n\nThis is a Python script that sequentially reads the polygons as polyhedra objects\nthrough SageMath, plots them in the same pair of axes.\n\n\nAuthor: Marcelo Forets.\n\n\nBash script\n\n\nThis solution is needs the tools: \ngraph\n and \npdftoppm\n added to your path.\nAlso \nspaceex\n should be accessible from your path. The script works by transforming\nthe SpaceEx result to PDF and to PNG formats. \n\n\nLink: \nplot_gen.sh\n. \n\n\nAuthor: Christian Schilling. \n\n\n3PLIB\n (Java)\n\n\nThe project \n3PLIB\n is a Java Library specialized\nto planar projections of convex polyhedra. It was initially created to embed this feature\nin Java applications, and also provides a backend for visualization of high-dimensional\nreach set approximations computed with \nSpaceEx\n.\n\n\nLink: \n3PLIB\n\n\nAuthor: Fr\u00e9d\u00e9ric Viry.", 
             "title": "Plotting"
         }, 
         {
             "location": "/plotting/#plotting", 
-            "text": "There exist different visualization alternatives for SpaceEx results. Here we present these alternatives and an illustrative example.", 
+            "text": "There are different options to visualize SpaceEx results. Here we present some\nalternatives. An illustrative example is presented in Example .", 
             "title": "Plotting"
         }, 
         {
-            "location": "/plotting/#bash-script", 
-            "text": "This solution is needs the tools:  graph  and  pdftoppm  added to your path. Also  spaceex  should be accessible from your path. The script works by transforming the SpaceEx result to PDF and to PNG formats.   Link:  plot_gen.sh .   Written by Christian Schilling.", 
-            "title": "Bash script"
-        }, 
-        {
-            "location": "/plotting/#plot_verticesm-matlab", 
-            "text": "", 
-            "title": "plot_vertices.m (Matlab)"
-        }, 
-        {
-            "location": "/plotting/#3plib-java", 
-            "text": "The project  3PLIB  is a Java Library developed\nby Fr\u00e9d\u00e9ric Viry. This library is specialized to planar projections of convex polyhedra. It was initially created to embed this feature in Java applications, and also provides a backend for visualization of high-dimensional reach set approximations computed with  SpaceEx .", 
-            "title": "3PLIB (Java)"
+            "location": "/plotting/#plot_2d_verticesm-matlab", 
+            "text": "There is a default script that can be downloaded from SpaceEx webpage, plot_2d_vertices.m .  A revised script with extra options is also available.  Link:  plot_2d_vertices.m .  Authors: Nikolaos Kekatos, Marcelo Forets.", 
+            "title": "plot_2d_vertices.m (Matlab)"
         }, 
         {
             "location": "/plotting/#lazysetsjl-julia", 
-            "text": "LazySets.jl  is part of the  JuliaReach , an online organisation for reachability computations for dynamical systems in  Julia , a modern high-performance language for scientific computing.  This is the more feature-rich plotting solution, since there are many plotting backends available.", 
+            "text": "[LazySets.jl]https://github.com/juliareach/LazySets.jl) is part of  JuliaReach , an online\norganization that develops tools for reachability computations of dynamical systems in  Julia .  This is the more feature-rich alternative, since there are many plotting backends\navailable. The following example was obtained with the  Plotly  backend.   Link:  LazySets.jl  Authors: Marcelo Forets, Christian Schilling, Fr\u00e9d\u00e9ric Viry.", 
             "title": "LazySets.jl (Julia)"
         }, 
         {
-            "location": "/plotting/#plot_verticespy-python", 
-            "text": "", 
-            "title": "plot_vertices.py (Python)"
+            "location": "/plotting/#plot_2d_verticespy-pythonsagemath", 
+            "text": "This is a Python script that sequentially reads the polygons as polyhedra objects\nthrough SageMath, plots them in the same pair of axes.  Author: Marcelo Forets.", 
+            "title": "plot_2d_vertices.py (Python/SageMath)"
+        }, 
+        {
+            "location": "/plotting/#bash-script", 
+            "text": "This solution is needs the tools:  graph  and  pdftoppm  added to your path.\nAlso  spaceex  should be accessible from your path. The script works by transforming\nthe SpaceEx result to PDF and to PNG formats.   Link:  plot_gen.sh .   Author: Christian Schilling.", 
+            "title": "Bash script"
+        }, 
+        {
+            "location": "/plotting/#3plib-java", 
+            "text": "The project  3PLIB  is a Java Library specialized\nto planar projections of convex polyhedra. It was initially created to embed this feature\nin Java applications, and also provides a backend for visualization of high-dimensional\nreach set approximations computed with  SpaceEx .  Link:  3PLIB  Author: Fr\u00e9d\u00e9ric Viry.", 
+            "title": "3PLIB (Java)"
         }, 
         {
             "location": "/multiple/", 
-            "text": "There are two ways to run multiple reachable computations. Either creating new cfg files with multiple configurations (e.g. different initial conditions) or run spaceex with different arguments in the terminal. \n\n\nIf you want to automatically run different configurations, you can run a \nbash\n file. A practical option is to have a parametrized bash file that concerns different configurations. \n\n\nOne way to automatically create several cfg files with different initial conditions and names can be found at the \nGithub repository\n. It employs the \ntimed bouncing ball\n example.\n\n\nThe file can be executed by writing in the terminal the following command \n$ ./run_spaceex.sh\n. If you have problem with permissions, try the command \n$ sh run_spaceex.sh\n.", 
+            "text": "There are two ways to run multiple reachable computations. Either creating new\ncfg files with multiple configurations (e.g. different initial conditions) or\nrun spaceex with different arguments in the terminal. \n\n\nIf you want to automatically run different configurations, you can run a\n\nbash\n file.\nA practical option is to have a parametrized bash file that concerns different configurations. \n\n\nOne way to automatically create several cfg files with different initial conditions and names can be found at the \nGithub repository\n.\nIt employs the \ntimed bouncing ball\n example.\n\n\nThe file can be executed by writing in the terminal the following command \n$ ./run_spaceex.sh\n. If you have problem with permissions, try the command \n$ sh run_spaceex.sh\n.", 
             "title": "Running mutliple configurations"
         }
     ]
