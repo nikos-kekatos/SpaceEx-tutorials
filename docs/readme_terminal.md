@@ -1,10 +1,8 @@
-## Using SpaceEx from the terminal
+# Using SpaceEx from the terminal
 
 
-### Introduction
-This serves as a tutorial on how to use [SpaceEx](http://spaceex.imag.fr) from the terminal. There are two ways to do so: (i) running directly the executable file, and (ii) compiling the source code and then running the executable. The latter option is advised for advanced users. 
 
-### Steps
+## Steps
 
 The necessary steps are as follows.
 
@@ -49,12 +47,6 @@ More information can be found  at the [FAQ](http://spaceex.imag.fr/documentation
 
      - To obtain the flattened/composed hybrid automaton in XML format, you can add the argument `--output-system-file new_name`
 
-    - __*Example 1*__ **(Timed bouncing ball)**.
-We illustrate the necessary commands on an example from the SpaceEx website (files enclosed in the github repository as well).
-
-     - `$ ./spaceex -g bball\_timed.cfg -m bball\_timed.xml -o out.gen` This command creates and saves the reachability results to a GEN file (the name of the file is *out*).
-     - `$ ./spaceex -g bball\_timed.cfg -m bball\_timed.xml -o out2.gen -v D6 --flowpipe-tolerance 0.01`. This command creates the *out2* GEN file, while specifying the accuracy of the computations and the verbosity level.
-     - `$ ./spaceex -g bball\_timed.cfg -m bball\_timed.xml -o out3.gen --initially  "12<=x<=12.2 \& v==0 \& t==0"`. This command conducts reachability analysis for the specified initial conditions and creates the *out3* GEN file.
 
 4. **Run multiple files**.
 

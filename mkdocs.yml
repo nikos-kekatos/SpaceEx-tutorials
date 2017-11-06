@@ -4,7 +4,7 @@ site_url: "https://nikos-kekatos.github.io/SpaceEx-tutorials"
 theme: 'material'
 
 pages:
-    - Home: index.md
+    - Introduction: index.md
+    - Running SpaceEx from the terminal: readme_terminal.md
     - Example: example.md
-    - Using SpaceEx from the terminal: readme_terminal.md
     - Plotting: plotting.md
