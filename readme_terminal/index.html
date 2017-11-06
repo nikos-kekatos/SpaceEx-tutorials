@@ -167,8 +167,6 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
-      
-    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
         Running SpaceEx from the terminal
@@ -182,15 +180,34 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#steps" title="Steps" class="md-nav__link">
-    Steps
+  <a href="#set-up-virtual-machine" title="Set up Virtual Machine" class="md-nav__link">
+    Set up Virtual Machine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-spaceex" title="Download SpaceEx" class="md-nav__link">
+    Download SpaceEx
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-spaceex" title="Run SpaceEx" class="md-nav__link">
+    Run SpaceEx
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spaceex-options" title="SpaceEx Options" class="md-nav__link">
+    SpaceEx Options
   </a>
   
 </li>
@@ -228,6 +245,18 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../multiple/" title="Running mutliple configurations" class="md-nav__link">
+      Running mutliple configurations
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -242,15 +271,34 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#steps" title="Steps" class="md-nav__link">
-    Steps
+  <a href="#set-up-virtual-machine" title="Set up Virtual Machine" class="md-nav__link">
+    Set up Virtual Machine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-spaceex" title="Download SpaceEx" class="md-nav__link">
+    Download SpaceEx
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-spaceex" title="Run SpaceEx" class="md-nav__link">
+    Run SpaceEx
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spaceex-options" title="SpaceEx Options" class="md-nav__link">
+    SpaceEx Options
   </a>
   
 </li>
@@ -270,18 +318,26 @@
               
                 
                 
-                <h1 id="using-spaceex-from-the-terminal">Using SpaceEx from the terminal</h1>
-<h2 id="steps">Steps</h2>
+                  <h1>Running SpaceEx from the terminal</h1>
+                
+                <!--# Using SpaceEx from the terminal-->
+
 <p>The necessary steps are as follows.</p>
-<ol>
-<li>
-<p><strong>Set up Virtual Machine (necessary only for Window users)</strong>. Note that it is not possible to directly run the executable file in Windows. The executables are created for Linux and macOS. It might be possible with cygwin but not advised. On the contrary, the recommended way would be to create a new Virtual Machine and install Linux (also possible with macOS). </p>
+<h3 id="set-up-virtual-machine">Set up Virtual Machine</h3>
+<p><em>(Non-Windows users should proceed to the next step)</em>.</p>
+<p>Note that it is not possible to directly run the executable file in Windows. The executables are created for Linux and macOS. It might be possible with cygwin but not advised. On the contrary, the recommended way would be to create a new Virtual Machine and install Linux (also possible with macOS). </p>
 <ul>
-<li><strong>Download OS</strong>. The first step is to download a 32- or 64-bit Linux distribution (e.g. <a href="https://www.ubuntu.com/download/desktop">Ubuntu</a> or <a href="https://www.debian.org/distrib/">Debian</a>. We recommend the 64-bit version as it supports the latest SpaceEx version.</li>
-<li><strong>Download VM</strong>. There are several options, notably Oracle <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> (1st option for Windows host) or <a href="https://my.vmware.com/en/web/vmware/downloads">VMmare Player</a>. Our recommendation would be the former.</li>
+<li>
+<p><strong>Download OS</strong>. The first step is to download a 32- or 64-bit Linux distribution (e.g. <a href="https://www.ubuntu.com/download/desktop">Ubuntu</a> or <a href="https://www.debian.org/distrib/">Debian</a>. We recommend the 64-bit version as it supports the latest SpaceEx version.</p>
+</li>
+<li>
+<p><strong>Download VM</strong>. There are several options, notably Oracle <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> (1st option for Windows host) or <a href="https://my.vmware.com/en/web/vmware/downloads">VMmare Player</a>. Our recommendation would be the former.</p>
+</li>
 <li><strong>Set up new VM</strong>. Once the VM application is downloaded, a new VM should be created and set up. For VirtualBox, simply open the application, navigate to option <em>New</em>  (on top-left), select <em>Linux</em> and version (e.g. 64-debian), memory size (over 2 GB is typically enough), <em>Create a virtual machine now</em>, <em>VDI</em>, <em>dynamically allocated</em> and size over <em>8GB</em>.</li>
 <li><strong>Install OS</strong>. Now, a new virtual machine should be created (appears on the left) and you shall select <em>start</em>. The option <em>Select Start-up disk</em> pops up and you should add the location of the downloaded ISO file (64-bit Linux). Now, it is possible to install Linux. There will be several questions similar to a Windows installation.</li>
-<li><strong>Set up Linux</strong>. There are numerous  tutorials on the <a href="http://www.makeuseof.com/tag/an-a-z-of-linux-40-essential-commands-you-should-know/">basic Linux commands</a>. The necessary actions to setup your Linux for SpaceEx use follow.</li>
+<li>
+<p><strong>Set up Linux</strong>. There are numerous  tutorials on the <a href="http://www.makeuseof.com/tag/an-a-z-of-linux-40-essential-commands-you-should-know/">basic Linux commands</a>. The necessary actions to setup your Linux for SpaceEx use follow.</p>
+<ul>
 <li>Open terminal (Ubuntu: press Dash, Debian: press  Activities, and then search for Terminal).</li>
 <li>
 <p>Gain root access by <code>$ su</code><br />
@@ -294,13 +350,11 @@
 <li><code>$ sudo apt-get update</code></li>
 </ul>
 </li>
-<li>
-<p><strong>Download SpaceEx</strong>. Depending on the OS you have downloaded, select the corresponding executable file from <a href="http://spaceex.imag.fr/download-6">SpaceEx website</a>. That is <em>SpaceEx command line executable v0.9.8f</em> for 64 bit Linux or <em>SpaceEx command line executable v0.9.8e</em> (64 bit Mac OS X)</p>
-</li>
-<li>
-<p><strong>Use SpaceEx from command line</strong>.</p>
+</ul>
+<h3 id="download-spaceex">Download SpaceEx</h3>
+<p>Depending on the OS you have downloaded, select the corresponding executable file from <a href="http://spaceex.imag.fr/download-6">SpaceEx website</a>. That is <em>SpaceEx command line executable v0.9.8f</em> for 64 bit Linux or <em>SpaceEx command line executable v0.9.8e</em> (64 bit Mac OS X).</p>
+<h3 id="run-spaceex">Run SpaceEx</h3>
 <ul>
-<li><strong><em>Run SpaceEx</em></strong></li>
 <li>
 <p>use command <code>cd</code> to change directory (to the folder you saved the spaceex files). For example, <code>$ cd /home/user/Downloads/spaceex\_exe</code>.
 If you cannot cd with root privilege, press exit (to leave root) and then write the aforementioned command.  </p>
@@ -315,7 +369,9 @@ If you cannot cd with root privilege, press exit (to leave root) and then write 
 <p>Spaceex will run, show the steps on the terminal screen and save the results in the output file. The results could be numbers (representing the vertices of the reachable sets) or text. 
 More information can be found  at the <a href="http://spaceex.imag.fr/documentation/user-documentation/frequently-asked-questions-21">FAQ</a>.</p>
 </li>
-<li><strong><em>Extra Options</em></strong></li>
+</ul>
+<h3 id="spaceex-options">SpaceEx Options</h3>
+<ul>
 <li>
 <p>All the options can be found by writing the command <code>$ ./spaceex --help</code> on the terminal.</p>
 </li>
@@ -326,16 +382,6 @@ More information can be found  at the <a href="http://spaceex.imag.fr/documentat
 <p>To obtain the flattened/composed hybrid automaton in XML format, you can add the argument <code>--output-system-file new_name</code></p>
 </li>
 </ul>
-</li>
-<li>
-<p><strong>Run multiple files</strong>.</p>
-<ul>
-<li>There are two ways to run multiple reachable computations. Either creating new cfg files with multiple configurations (e.g. different initial conditions) or run spaceex with different arguments in the terminal. </li>
-<li>If you want to automatically run different configurations, you can run a bash file. Attached you can find a bash file with different configurations. Also, a way to automatically create several cfg files with different initial conditions and names is proposed.
-The file can be executed by writing in the terminal the following command  <code>$ ./run\_spaceex.sh</code>. If you have problem with permissions, try the command <code>$ sh run\_spaceex.sh</code>.</li>
-</ul>
-</li>
-</ol>
                 
                   
                 

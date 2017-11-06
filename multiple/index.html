@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="https://nikos-kekatos.github.io/SpaceEx-tutorials/plotting/">
+        <link rel="canonical" href="https://nikos-kekatos.github.io/SpaceEx-tutorials/multiple/">
       
       
       
@@ -34,7 +34,7 @@
     
     
       
-        <title>Plotting - SpaceEx-tutorials</title>
+        <title>Running mutliple configurations - SpaceEx-tutorials</title>
       
     
     
@@ -86,7 +86,7 @@
             
               
             
-            Plotting
+            Running mutliple configurations
           
         </span>
       </div>
@@ -184,75 +184,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Plotting
-      </label>
-    
-    <a href="./" title="Plotting" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../plotting/" title="Plotting" class="md-nav__link">
       Plotting
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#bash-script" title="Bash script" class="md-nav__link">
-    Bash script
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#plot_verticesm-matlab" title="plot_vertices.m (Matlab)" class="md-nav__link">
-    plot_vertices.m (Matlab)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3plib-java" title="3PLIB (Java)" class="md-nav__link">
-    3PLIB (Java)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lazysetsjl-julia" title="LazySets.jl (Julia)" class="md-nav__link">
-    LazySets.jl (Julia)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#plot_verticespy-python" title="plot_vertices.py (Python)" class="md-nav__link">
-    plot_vertices.py (Python)
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -260,11 +196,18 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../multiple/" title="Running mutliple configurations" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+    <a href="./" title="Running mutliple configurations" class="md-nav__link md-nav__link--active">
       Running mutliple configurations
     </a>
+    
   </li>
 
     
@@ -275,84 +218,18 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#bash-script" title="Bash script" class="md-nav__link">
-    Bash script
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#plot_verticesm-matlab" title="plot_vertices.m (Matlab)" class="md-nav__link">
-    plot_vertices.m (Matlab)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3plib-java" title="3PLIB (Java)" class="md-nav__link">
-    3PLIB (Java)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lazysetsjl-julia" title="LazySets.jl (Julia)" class="md-nav__link">
-    LazySets.jl (Julia)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#plot_verticespy-python" title="plot_vertices.py (Python)" class="md-nav__link">
-    plot_vertices.py (Python)
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                <h1 id="plotting">Plotting</h1>
-<p>There exist different visualization alternatives for SpaceEx results. Here we present these alternatives and an illustrative example. </p>
-<h2 id="bash-script">Bash script</h2>
-<p>This solution is needs the tools: <code>graph</code> and <code>pdftoppm</code> added to your path. Also <code>spaceex</code> should be accessible from your path. The script works by transforming the SpaceEx result to PDF and to PNG formats. </p>
-<p>Link: <a href="https://github.com/JuliaReach/ReachabilityBenchmarks/blob/master/models/SLICOT/iss/spaceex.sh">plot_gen.sh</a>. </p>
-<p>Written by Christian Schilling. </p>
-<h2 id="plot_verticesm-matlab"><code>plot_vertices.m</code> (Matlab)</h2>
-<h2 id="3plib-java"><code>3PLIB</code> (Java)</h2>
-<p>The project <a href="https://3plib.wordpress.com/">3PLIB</a> is a Java Library developed
-by Frédéric Viry. This library is specialized to planar projections of convex polyhedra. It was initially created to embed this feature in Java applications, and also provides a backend for visualization of high-dimensional reach set approximations computed with <a href="http://spaceex.imag.fr/">SpaceEx</a>.</p>
-<h2 id="lazysetsjl-julia"><code>LazySets.jl</code> (Julia)</h2>
-<p><code>LazySets.jl</code> is part of the <a href="https://github.com/juliareach">JuliaReach</a>, an online organisation for reachability computations for dynamical systems in <a href="https://julialang.org/">Julia</a>, a modern high-performance language for scientific computing.</p>
-<p>This is the more feature-rich plotting solution, since there are many plotting backends available.</p>
-<p><img alt="assets/plot_plotly.png" src="../assets/plot_plotly.png" /></p>
-<h2 id="plot_verticespy-python"><code>plot_vertices.py</code> (Python)</h2>
+                  <h1>Running mutliple configurations</h1>
+                
+                <p>There are two ways to run multiple reachable computations. Either creating new cfg files with multiple configurations (e.g. different initial conditions) or run spaceex with different arguments in the terminal. </p>
+<p>If you want to automatically run different configurations, you can run a <a href="https://ryanstutorials.net/bash-scripting-tutorial/bash-script.php">bash</a> file. A practical option is to have a parametrized bash file that concerns different configurations. </p>
+<p>One way to automatically create several cfg files with different initial conditions and names can be found at the <a href="https://github.com/nikos-kekatos/SpaceEx-tutorials/blob/master/SpaceEx_exec_terminal/run_spaceex.sh">Github repository</a>. It employs the <em>timed bouncing ball</em> example.</p>
+<p>The file can be executed by writing in the terminal the following command  <code>$ ./run\_spaceex.sh</code>. If you have problem with permissions, try the command <code>$ sh run\_spaceex.sh</code>.</p>
                 
                   
                 
@@ -371,7 +248,7 @@ by Frédéric Viry. This library is specialized to planar projections of convex 
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../example/" title="Example" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../plotting/" title="Plotting" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -380,25 +257,11 @@ by Frédéric Viry. This library is specialized to planar projections of convex 
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Example
+                Plotting
               </span>
             </div>
           </a>
         
-        
-          <a href="../multiple/" title="Running mutliple configurations" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Running mutliple configurations
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
