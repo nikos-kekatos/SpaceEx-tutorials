@@ -8,3 +8,4 @@ pages:
     - Running SpaceEx from the terminal: readme_terminal.md
     - Example: example.md
     - Plotting: plotting.md
+    - Running mutliple configurations: multiple.md
