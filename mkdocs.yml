@@ -1,0 +1,10 @@
+site_name: SpaceEx-tutorials
+site_url: "https://nikos-kekatos.gitlab.io/SpaceEx-tutorials"
+
+theme: 'material'
+
+pages:
+    - Home: index.md
+    - Example: example.md
+    - Using SpaceEx from the terminal: readme_terminal.md
+    - Plotting: plotting.md
