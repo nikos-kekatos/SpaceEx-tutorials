@@ -1,6 +1,6 @@
 # Example
 
-We illustrate the necessary commands on the *Timed Bouncing Ball* example from the [SpaceEx website](http://spaceex.imag.fr/download-6).  The files (xml & cfg) can be found at repository.
+We illustrate the necessary commands on the *Timed Bouncing Ball* example from the [SpaceEx website](http://spaceex.imag.fr/download-6).  The files (xml & cfg) can also be found at the [repository](https://github.com/nikos-kekatos/SpaceEx-tutorials/tree/master/Examples/Bouncing_Ball).
 
 The first command creates and saves the reachability results to a gen file (the name of the file is *out*).
 `$ ./spaceex -g bball\_timed.cfg -m bball\_timed.xml -o out.gen` 
