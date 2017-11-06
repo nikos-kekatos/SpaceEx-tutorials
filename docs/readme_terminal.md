@@ -34,10 +34,10 @@ Note that it is not possible to directly run the executable file in Windows. The
 
 ### Run SpaceEx
 
-   - use command `cd` to change directory (to the folder you saved the spaceex files). For example, `$ cd /home/user/Downloads/spaceex\_exe`.
+   - use command `cd` to change directory (to the folder you saved the spaceex files). For example, `$ cd /home/user/Downloads/spaceex_exe`.
 If you cannot cd with root privilege, press exit (to leave root) and then write the aforementioned command.  
 
-   - until you get familiar with paths and directories, save your xml and cfg files in */home/user/Downloads/spaceex\_exe*
+   - until you get familiar with paths and directories, save your xml and cfg files in */home/user/Downloads/spaceex_exe*
 
    - now, you are ready to run spaceex by writing in the terminal: ` ./spaceex -g config.cfg -m model.xml -o output`
 
