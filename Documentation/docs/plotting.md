@@ -19,8 +19,7 @@ Authors: Nikolaos Kekatos, Marcelo Forets.
 
 ## `LazySets.jl` (Julia)
 
-[LazySets.jl](https://github.com/juliareach/LazySets.jl) is part of [JuliaReach](https://github.com/juliareach), an online
-organization that develops tools for reachability computations of dynamical systems in [Julia](https://julialang.org/).
+[LazySets.jl](https://github.com/juliareach/LazySets.jl) is part of [JuliaReach](https://github.com/juliareach), a project developing tools for reachability computations of dynamical systems in [Julia](https://julialang.org/).
 
 This is the more feature-rich alternative, since there are many plotting backends
 available. The following example was obtained with the `Plotly` backend.
@@ -31,10 +30,10 @@ Link: [LazySets.jl](https://juliareach.github.io/LazySets.jl/latest/)
 
 Authors: Marcelo Forets, Christian Schilling, Frédéric Viry.
 
-## `plot_2d_vertices.py` (Python/SageMath)
+## `plot_2d_vertices.py` (Python)
 
-This is a Python script that sequentially reads the polygons as polyhedra objects
-through SageMath, plots them in the same pair of axes. For the pendulum example, we use the simple [Python script](https://github.com/nikos-kekatos/SpaceEx-tutorials/blob/master/Files/Plotting/Sage/Example/plot_polygons_sage.ipynb).
+This is a Python script that sequentially reads the polygons as polyhedra objects,
+and requires [SageMath](www.sagemath.org). For the pendulum example, we use the simple [Python script](https://github.com/nikos-kekatos/SpaceEx-tutorials/blob/master/Files/Plotting/Sage/Example/plot_polygons_sage.ipynb).
 
 ![assets/sage.png](assets/sage.png)
 
