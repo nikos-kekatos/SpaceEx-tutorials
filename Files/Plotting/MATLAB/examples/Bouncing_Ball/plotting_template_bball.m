@@ -6,6 +6,11 @@
 %
 % >> addpath('../../src/')
 % >> plotting_template_bball('bball_timed.gen')
+%
+% If you want to use the simple SpaceEx script `plot_2d_vertices.m`, run:
+%
+% >> plot_2d_vertices('bball_timed.gen')
+%
 % ========================================================================
 function plotting_template_bball(filename)
 
