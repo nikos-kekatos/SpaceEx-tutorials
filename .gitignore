@@ -3,3 +3,4 @@ site/*
 */site
 *.png
 *.mat
+*.ipynb_checkpoints
