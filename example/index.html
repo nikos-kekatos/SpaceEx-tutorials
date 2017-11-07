@@ -242,13 +242,13 @@
                 
                 
                 <h1 id="example">Example</h1>
-<p>We illustrate the necessary commands on the <em>Timed Bouncing Ball</em> example from the <a href="http://spaceex.imag.fr/download-6">SpaceEx website</a>.  The files (xml &amp; cfg) can also be found at the <a href="https://github.com/nikos-kekatos/SpaceEx-tutorials/tree/master/Examples/Bouncing_Ball">repository</a>.</p>
+<p>We illustrate the necessary commands on the <em>Timed Bouncing Ball</em> example from the <a href="http://spaceex.imag.fr/download-6">SpaceEx website</a>.  The files (xml &amp; cfg) can also be found at the <a href="https://github.com/nikos-kekatos/SpaceEx-tutorials/tree/master/Files/AutomatedExecution/Examples/Bouncing_Ball">repository</a>.</p>
 <p>The first command creates and saves the reachability results to a gen file (the name of the file is <em>out</em>).
-<code>$ ./spaceex -g bball\_timed.cfg -m bball\_timed.xml -o out.gen</code> </p>
+<code>$ ./spaceex -g bball_timed.cfg -m bball_timed.xml -o out.gen</code> </p>
 <p>The second command creates the <em>out2</em>  gen file, while specifying the accuracy of the computations and the verbosity level.    <br />
-<code>$ ./spaceex -g bball\_timed.cfg -m bball\_timed.xml -o out2.gen -v D6 --flowpipe-tolerance 0.01</code>. </p>
+<code>$ ./spaceex -g bball_timed.cfg -m bball_timed.xml -o out2.gen -v D6 --flowpipe-tolerance 0.01</code>. </p>
 <p>The third command conducts reachability analysis for the specified initial conditions and creates the <em>out3</em> gen file.
-<code>$ ./spaceex -g bball\_timed.cfg -m bball\_timed.xml -o out3.gen --initially  "12&lt;=x&lt;=12.2 \&amp; v==0 \&amp; t==0"</code>. </p>
+<code>$ ./spaceex -g bball_timed.cfg -m bball_timed.xml -o out3.gen --initially  "12&lt;=x&lt;=12.2 \&amp; v==0 \&amp; t==0"</code>. </p>
                 
                   
                 
