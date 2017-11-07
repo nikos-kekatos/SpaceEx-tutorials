@@ -1,8 +1,7 @@
 # Plotting
 
 There are different options to visualize SpaceEx results. Here we present some
-alternatives. An illustrative example is presented in
-[Example](https://nikos-kekatos.github.io/SpaceEx-tutorials/example/).
+alternatives on two examples, a [pendulum model](https://github.com/nikos-kekatos/SpaceEx-tutorials/tree/master/Files/Plotting/MATLAB/examples/pendulum) and a [timed bouncing ball](https://github.com/nikos-kekatos/SpaceEx-tutorials/tree/master/Files/Plotting/MATLAB/examples/Bouncing_Ball).
 
 ## `plot_2d_vertices.m` (Matlab)
 
@@ -34,7 +33,7 @@ Authors: Marcelo Forets, Christian Schilling, Frédéric Viry.
 
 ## `plot_2d_vertices.py` (Python/SageMath)
 
-This is a [Python script](https://github.com/nikos-kekatos/SpaceEx-tutorials/blob/master/Files/Plotting/Sage/plot_polygons_sage.ipynb) that sequentially reads the polygons as polyhedra objects
+This is a Python script that sequentially reads the polygons as polyhedra objects
 through SageMath, plots them in the same pair of axes. For the pendulum example, we use the simple [Python script](https://github.com/nikos-kekatos/SpaceEx-tutorials/blob/master/Files/Plotting/Sage/Example/plot_polygons_sage.ipynb).
 
 ![assets/sage.png](assets/sage.png)
