@@ -21,8 +21,9 @@ Authors: Nikolaos Kekatos, Marcelo Forets.
 
 [LazySets.jl](https://github.com/juliareach/LazySets.jl) is part of [JuliaReach](https://github.com/juliareach), a project developing tools for reachability computations of dynamical systems in [Julia](https://julialang.org/).
 
-This is the more feature-rich alternative, since there are many plotting backends
-available. The following example was obtained with the `Plotly` backend.
+This is the more feature-rich alternative and there are many plotting backends
+available. We refer to the documentation of `LazySets.jl` for further details.
+The following example was obtained with the `Plotly` backend.
 
 ![assets/plot_plotly.png](assets/plot_plotly.png)
 
