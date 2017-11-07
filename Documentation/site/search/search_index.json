@@ -1,0 +1,89 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Introduction\n\n\nThis serves as a tutorial on how to use \nSpaceEx\n from the terminal. There are two ways to do so: (i) running directly the executable file, and (ii) compiling the source code and then running the executable. The latter option is advised for advanced users.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/#introduction", 
+            "text": "This serves as a tutorial on how to use  SpaceEx  from the terminal. There are two ways to do so: (i) running directly the executable file, and (ii) compiling the source code and then running the executable. The latter option is advised for advanced users.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/readme_terminal/", 
+            "text": "The necessary steps are as follows.\n\n\nSet up Virtual Machine\n\n\n(Non-Windows users should proceed to the next step)\n.\n\n\nNote that it is not possible to directly run the executable file in Windows. The executables are created for Linux and macOS. It might be possible with cygwin but not advised. On the contrary, the recommended way would be to create a new Virtual Machine and install Linux (also possible with macOS). \n\n\n\n\n\n\nDownload OS\n. The first step is to download a 32- or 64-bit Linux distribution (e.g. \nUbuntu\n or \nDebian\n. We recommend the 64-bit version as it supports the latest SpaceEx version.\n\n\n\n\n\n\nDownload VM\n. There are several options, notably Oracle \nVirtualBox\n (1st option for Windows host) or \nVMmare Player\n. Our recommendation would be the former.\n\n\n\n\nSet up new VM\n. Once the VM application is downloaded, a new VM should be created and set up. For VirtualBox, simply open the application, navigate to option \nNew\n  (on top-left), select \nLinux\n and version (e.g. 64-debian), memory size (over 2 GB is typically enough), \nCreate a virtual machine now\n, \nVDI\n, \ndynamically allocated\n and size over \n8GB\n.\n\n\nInstall OS\n. Now, a new virtual machine should be created (appears on the left) and you shall select \nstart\n. The option \nSelect Start-up disk\n pops up and you should add the location of the downloaded ISO file (64-bit Linux). Now, it is possible to install Linux. There will be several questions similar to a Windows installation.\n\n\n\n\nSet up Linux\n. There are numerous  tutorials on the \nbasic Linux commands\n. The necessary actions to setup your Linux for SpaceEx use follow.\n\n\n\n\nOpen terminal (Ubuntu: press Dash, Debian: press  Activities, and then search for Terminal).\n\n\n\n\nGain root access by \n$ su\n\n(\n$\n is used for clarity, it should not be added in the terminal) and insert your password.\n\n\n\n\n\n\n$ apt-get install sudo\n\n\n\n\n$ sudo apt-get install build-essential\n\n\n$ sudo apt-get update\n\n\n\n\n\n\n\n\nDownload SpaceEx\n\n\nDepending on the OS you have downloaded, select the corresponding executable file from \nSpaceEx website\n. That is \nSpaceEx command line executable v0.9.8f\n for 64 bit Linux or \nSpaceEx command line executable v0.9.8e\n (64 bit Mac OS X).\n\n\nRun SpaceEx\n\n\n\n\n\n\nuse command \ncd\n to change directory (to the folder you saved the spaceex files). For example, \n$ cd /home/user/Downloads/spaceex_exe\n.\nIf you cannot cd with root privilege, press exit (to leave root) and then write the aforementioned command.  \n\n\n\n\n\n\nuntil you get familiar with paths and directories, save your xml and cfg files in \n/home/user/Downloads/spaceex_exe\n\n\n\n\n\n\nnow, you are ready to run spaceex by writing in the terminal: \n./spaceex -g config.cfg -m model.xml -o output\n\n\n\n\n\n\nSpaceex will run, show the steps on the terminal screen and save the results in the output file. The results could be numbers (representing the vertices of the reachable sets) or text. \nMore information can be found  at the \nFAQ\n.\n\n\n\n\n\n\nSpaceEx Options\n\n\n\n\n\n\nAll the options can be found by writing the command \n$ ./spaceex --help\n on the terminal.\n\n\n\n\n\n\nPlotting; there are different ways to plot the reachable sets. For MATLAB users, it is possible to save the 2D results in GEN format and use the \nMatlab script\n for visualization (i.e. \nplot_2d_vertices\n).\n\n\n\n\n\n\nTo obtain the flattened/composed hybrid automaton in XML format, you can add the argument \n--output-system-file new_name", 
+            "title": "Running SpaceEx from the terminal"
+        }, 
+        {
+            "location": "/readme_terminal/#set-up-virtual-machine", 
+            "text": "(Non-Windows users should proceed to the next step) .  Note that it is not possible to directly run the executable file in Windows. The executables are created for Linux and macOS. It might be possible with cygwin but not advised. On the contrary, the recommended way would be to create a new Virtual Machine and install Linux (also possible with macOS).     Download OS . The first step is to download a 32- or 64-bit Linux distribution (e.g.  Ubuntu  or  Debian . We recommend the 64-bit version as it supports the latest SpaceEx version.    Download VM . There are several options, notably Oracle  VirtualBox  (1st option for Windows host) or  VMmare Player . Our recommendation would be the former.   Set up new VM . Once the VM application is downloaded, a new VM should be created and set up. For VirtualBox, simply open the application, navigate to option  New   (on top-left), select  Linux  and version (e.g. 64-debian), memory size (over 2 GB is typically enough),  Create a virtual machine now ,  VDI ,  dynamically allocated  and size over  8GB .  Install OS . Now, a new virtual machine should be created (appears on the left) and you shall select  start . The option  Select Start-up disk  pops up and you should add the location of the downloaded ISO file (64-bit Linux). Now, it is possible to install Linux. There will be several questions similar to a Windows installation.   Set up Linux . There are numerous  tutorials on the  basic Linux commands . The necessary actions to setup your Linux for SpaceEx use follow.   Open terminal (Ubuntu: press Dash, Debian: press  Activities, and then search for Terminal).   Gain root access by  $ su \n( $  is used for clarity, it should not be added in the terminal) and insert your password.    $ apt-get install sudo   $ sudo apt-get install build-essential  $ sudo apt-get update", 
+            "title": "Set up Virtual Machine"
+        }, 
+        {
+            "location": "/readme_terminal/#download-spaceex", 
+            "text": "Depending on the OS you have downloaded, select the corresponding executable file from  SpaceEx website . That is  SpaceEx command line executable v0.9.8f  for 64 bit Linux or  SpaceEx command line executable v0.9.8e  (64 bit Mac OS X).", 
+            "title": "Download SpaceEx"
+        }, 
+        {
+            "location": "/readme_terminal/#run-spaceex", 
+            "text": "use command  cd  to change directory (to the folder you saved the spaceex files). For example,  $ cd /home/user/Downloads/spaceex_exe .\nIf you cannot cd with root privilege, press exit (to leave root) and then write the aforementioned command.      until you get familiar with paths and directories, save your xml and cfg files in  /home/user/Downloads/spaceex_exe    now, you are ready to run spaceex by writing in the terminal:  ./spaceex -g config.cfg -m model.xml -o output    Spaceex will run, show the steps on the terminal screen and save the results in the output file. The results could be numbers (representing the vertices of the reachable sets) or text. \nMore information can be found  at the  FAQ .", 
+            "title": "Run SpaceEx"
+        }, 
+        {
+            "location": "/readme_terminal/#spaceex-options", 
+            "text": "All the options can be found by writing the command  $ ./spaceex --help  on the terminal.    Plotting; there are different ways to plot the reachable sets. For MATLAB users, it is possible to save the 2D results in GEN format and use the  Matlab script  for visualization (i.e.  plot_2d_vertices ).    To obtain the flattened/composed hybrid automaton in XML format, you can add the argument  --output-system-file new_name", 
+            "title": "SpaceEx Options"
+        }, 
+        {
+            "location": "/example/", 
+            "text": "Example\n\n\nWe illustrate the necessary commands on the \nTimed Bouncing Ball\n example from the \nSpaceEx website\n.  The files (xml \n cfg) can also be found at the \nrepository\n.\n\n\nThe first command creates and saves the reachability results to a gen file (the name of the file is \nout\n).\n\n$ ./spaceex -g bball\\_timed.cfg -m bball\\_timed.xml -o out.gen\n \n\n\nThe second command creates the \nout2\n  gen file, while specifying the accuracy of the computations and the verbosity level.    \n\n\n$ ./spaceex -g bball\\_timed.cfg -m bball\\_timed.xml -o out2.gen -v D6 --flowpipe-tolerance 0.01\n. \n\n\nThe third command conducts reachability analysis for the specified initial conditions and creates the \nout3\n gen file.\n\n$ ./spaceex -g bball\\_timed.cfg -m bball\\_timed.xml -o out3.gen --initially  \"12\n=x\n=12.2 \\\n v==0 \\\n t==0\"\n.", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/example/#example", 
+            "text": "We illustrate the necessary commands on the  Timed Bouncing Ball  example from the  SpaceEx website .  The files (xml   cfg) can also be found at the  repository .  The first command creates and saves the reachability results to a gen file (the name of the file is  out ). $ ./spaceex -g bball\\_timed.cfg -m bball\\_timed.xml -o out.gen    The second command creates the  out2   gen file, while specifying the accuracy of the computations and the verbosity level.      $ ./spaceex -g bball\\_timed.cfg -m bball\\_timed.xml -o out2.gen -v D6 --flowpipe-tolerance 0.01 .   The third command conducts reachability analysis for the specified initial conditions and creates the  out3  gen file. $ ./spaceex -g bball\\_timed.cfg -m bball\\_timed.xml -o out3.gen --initially  \"12 =x =12.2 \\  v==0 \\  t==0\" .", 
+            "title": "Example"
+        }, 
+        {
+            "location": "/plotting/", 
+            "text": "Plotting\n\n\nThere exist different visualization alternatives for SpaceEx results. Here we present these alternatives and an illustrative example. \n\n\nBash script\n\n\nThis solution is needs the tools: \ngraph\n and \npdftoppm\n added to your path. Also \nspaceex\n should be accessible from your path. The script works by transforming the SpaceEx result to PDF and to PNG formats. \n\n\nLink: \nplot_gen.sh\n. \n\n\nWritten by Christian Schilling. \n\n\nplot_vertices.m\n (Matlab)\n\n\n3PLIB\n (Java)\n\n\nThe project \n3PLIB\n is a Java Library developed\nby Fr\u00e9d\u00e9ric Viry. This library is specialized to planar projections of convex polyhedra. It was initially created to embed this feature in Java applications, and also provides a backend for visualization of high-dimensional reach set approximations computed with \nSpaceEx\n.\n\n\nLazySets.jl\n (Julia)\n\n\nLazySets.jl\n is part of the \nJuliaReach\n, an online organisation for reachability computations for dynamical systems in \nJulia\n, a modern high-performance language for scientific computing.\n\n\nThis is the more feature-rich plotting solution, since there are many plotting backends available.\n\n\n\n\nplot_vertices.py\n (Python)", 
+            "title": "Plotting"
+        }, 
+        {
+            "location": "/plotting/#plotting", 
+            "text": "There exist different visualization alternatives for SpaceEx results. Here we present these alternatives and an illustrative example.", 
+            "title": "Plotting"
+        }, 
+        {
+            "location": "/plotting/#bash-script", 
+            "text": "This solution is needs the tools:  graph  and  pdftoppm  added to your path. Also  spaceex  should be accessible from your path. The script works by transforming the SpaceEx result to PDF and to PNG formats.   Link:  plot_gen.sh .   Written by Christian Schilling.", 
+            "title": "Bash script"
+        }, 
+        {
+            "location": "/plotting/#plot_verticesm-matlab", 
+            "text": "", 
+            "title": "plot_vertices.m (Matlab)"
+        }, 
+        {
+            "location": "/plotting/#3plib-java", 
+            "text": "The project  3PLIB  is a Java Library developed\nby Fr\u00e9d\u00e9ric Viry. This library is specialized to planar projections of convex polyhedra. It was initially created to embed this feature in Java applications, and also provides a backend for visualization of high-dimensional reach set approximations computed with  SpaceEx .", 
+            "title": "3PLIB (Java)"
+        }, 
+        {
+            "location": "/plotting/#lazysetsjl-julia", 
+            "text": "LazySets.jl  is part of the  JuliaReach , an online organisation for reachability computations for dynamical systems in  Julia , a modern high-performance language for scientific computing.  This is the more feature-rich plotting solution, since there are many plotting backends available.", 
+            "title": "LazySets.jl (Julia)"
+        }, 
+        {
+            "location": "/plotting/#plot_verticespy-python", 
+            "text": "", 
+            "title": "plot_vertices.py (Python)"
+        }, 
+        {
+            "location": "/multiple/", 
+            "text": "There are two ways to run multiple reachable computations. Either creating new cfg files with multiple configurations (e.g. different initial conditions) or run spaceex with different arguments in the terminal. \n\n\nIf you want to automatically run different configurations, you can run a \nbash\n file. A practical option is to have a parametrized bash file that concerns different configurations. \n\n\nOne way to automatically create several cfg files with different initial conditions and names can be found at the \nGithub repository\n. It employs the \ntimed bouncing ball\n example.\n\n\nThe file can be executed by writing in the terminal the following command \n$ ./run_spaceex.sh\n. If you have problem with permissions, try the command \n$ sh run_spaceex.sh\n.", 
+            "title": "Running mutliple configurations"
+        }
+    ]
+}

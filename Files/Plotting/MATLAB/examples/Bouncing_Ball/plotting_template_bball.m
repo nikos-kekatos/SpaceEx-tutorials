@@ -60,25 +60,19 @@
 %     The total elapsed time is 0.6148 seconds.
 
 % ========================================================================
-function example_plotting(filename)
+function plotting_template_bball(filename)
 
-if varargin == 0
+if nargin == 0
     % choose file name
-    filename = 'pend.gen';
+    error('Select a GEN file');
 end
 
-% if it doesn't exist, generate .mat file containing the flowpipe
-filename_mat = strrep(filename, '.gen', '.mat');
-if exist(filename_mat, 'file') == 2   
-     % file exists
-else
-    gen_to_mat(filename)
-end
+[filename_mat,options]=gen_to_mat(filename)
 
 % generate the plots : what are good 'jumps' depends on the model
-options.verbose = 1;
-options.jump = [1 5 40 200 500 1000 2000 2500 3000 3500 5000];
-options.color = 'k';
+options.jump=[1 3 5 7 9 11 13 15 17 19 21 23 25 27 29];
+options.jump=[2 ];
+
 plot_flowpipe(filename_mat, options);
 
 end

@@ -7,17 +7,20 @@ alternatives. An illustrative example is presented in
 ## `plot_2d_vertices.m` (Matlab)
 
 There is a default script that can be downloaded from SpaceEx webpage,
-[plot_2d_vertices.m](http://spaceex.imag.fr/sites/default/files/downloads/plot_2d_vertices.m).
+[plot\_2d\_vertices.m](http://spaceex.imag.fr/sites/default/files/downloads/plot_2d_vertices.m). For the timed bouncing ball, we get 
 
-A revised script with extra options is also available.
+![assets/bball_timed_original.png](assets/bball_timed_original.png)
 
-Link: [plot_2d_vertices.m](http://spaceex.imag.fr/sites/default/files/downloads/plot_2d_vertices.m).
+
+A [revised script] (https://github.com/nikos-kekatos/SpaceEx-tutorials/tree/master/Files/Plotting/Matlab) with extra options (save, set animations, verbosity, ranges, polytope numbers, reduced computation time) is also available. Assume that we do not want the entire flowpipe (all the polytopes). We can only plot half of it (evenly distributed) by running [template\_plotting\_bball]().
+
+![assets/bball_timed_modified_2.png](assets/bball_timed_modified_2.png)
 
 Authors: Nikolaos Kekatos, Marcelo Forets.
 
 ## `LazySets.jl` (Julia)
 
-[LazySets.jl]https://github.com/juliareach/LazySets.jl) is part of [JuliaReach](https://github.com/juliareach), an online
+[LazySets.jl](https://github.com/juliareach/LazySets.jl) is part of [JuliaReach](https://github.com/juliareach), an online
 organization that develops tools for reachability computations of dynamical systems in [Julia](https://julialang.org/).
 
 This is the more feature-rich alternative, since there are many plotting backends
@@ -31,7 +34,7 @@ Authors: Marcelo Forets, Christian Schilling, Frédéric Viry.
 
 ## `plot_2d_vertices.py` (Python/SageMath)
 
-This is a Python script that sequentially reads the polygons as polyhedra objects
+This is a [Python script](https://github.com/nikos-kekatos/SpaceEx-tutorials/blob/master/Files/Plotting/Sage/plot_polygons_sage.ipynb) that sequentially reads the polygons as polyhedra objects
 through SageMath, plots them in the same pair of axes.
  
 Author: Marcelo Forets.

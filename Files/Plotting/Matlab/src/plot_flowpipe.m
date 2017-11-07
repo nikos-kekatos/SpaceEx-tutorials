@@ -154,7 +154,9 @@ else
         ind_max = k*size_chunks;
         for i = ind_min:ind_max
             if mod(i, options.jump(k)) == 0
-                patch(fp{i}.x, fp{i}.y, options.color);
+                try
+                    patch(fp{i}.x, fp{i}.y, options.color);
+                end
             end
         end
     end

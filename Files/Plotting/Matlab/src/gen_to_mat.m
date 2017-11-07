@@ -1,4 +1,4 @@
-function fname_mat = gen_to_mat(fname, options)
+function [fname_mat,options] = gen_to_mat(fname, options)
 % GEN_TO_MAT Export a 2D flowpipe in .gen format into a matlab .mat file.
 %
 % INPUT:
@@ -47,8 +47,8 @@ tic
 
 if nargin == 0    
     error('Filename not specified.');
-elseif nargin == 1    % options not specified
-    options.verbose = 1;
+elseif nargin==1
+    options=[];
 end
 
 if ~isfield(options, 'verbose')
@@ -71,10 +71,20 @@ if ~isfield(options, 'max_y')
     options.max_y = 20;
 end
 
+if ~isfield(options, 'draw')
+    options.draw=0;
+end
 if ~isfield(options, 'estimate_number_polygons')
     options.estimate_number_polygons = 1e3;
 end
 
+if ~isfield(options, 'load_mat')
+    options.load_mat = 1;
+end
+
+if ~isfield(options, 'color')
+    options.color = 'k';
+end
 if options.verbose
     fid=fopen(fname,'rt');
     fseek(fid, 0, 'eof');
