@@ -12,7 +12,7 @@ There is a default script that can be downloaded from SpaceEx webpage,
 ![assets/bball_timed_original.png](assets/bball_timed_original.png)
 
 
-A [revised script](https://github.com/nikos-kekatos/SpaceEx-tutorials/tree/master/Files/Plotting/Matlab) with extra options (save, set animations, verbosity, ranges, polytope numbers, reduced computation time) is also available. Assume that we do not want the entire flowpipe (all the polytopes). We can only plot half of it (evenly distributed) by running [template\_plotting\_bball](https://github.com/nikos-kekatos/SpaceEx-tutorials/blob/master/Files/Plotting/MATLAB/examples/Bouncing_Ball/plotting_template_bball.m).
+A [revised script](https://github.com/nikos-kekatos/SpaceEx-tutorials/tree/master/Files/Plotting/MATLAB/src) with extra options (save, set animations, verbosity, ranges, polytope numbers, reduced computation time) is also available. Assume that we do not want the entire flowpipe (all the polytopes). We can only plot half of it (evenly distributed) by running [template\_plotting\_bball](https://github.com/nikos-kekatos/SpaceEx-tutorials/blob/master/Files/Plotting/MATLAB/examples/Bouncing_Ball/plotting_template_bball.m).
 
 ![assets/bball_timed_modified_2.png](assets/bball_timed_modified_2.png)
 
