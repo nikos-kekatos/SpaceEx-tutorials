@@ -35,8 +35,10 @@ Authors: Marcelo Forets, Christian Schilling, Frédéric Viry.
 ## `plot_2d_vertices.py` (Python/SageMath)
 
 This is a [Python script](https://github.com/nikos-kekatos/SpaceEx-tutorials/blob/master/Files/Plotting/Sage/plot_polygons_sage.ipynb) that sequentially reads the polygons as polyhedra objects
-through SageMath, plots them in the same pair of axes.
- 
+through SageMath, plots them in the same pair of axes. For the pendulum example, we use the simple [Python script](https://github.com/nikos-kekatos/SpaceEx-tutorials/blob/master/Files/Plotting/Sage/Example/plot_polygons_sage.ipynb).
+
+![assets/sage.png](assets/sage.png)
+
 Author: Marcelo Forets.
 
 ## Bash script
