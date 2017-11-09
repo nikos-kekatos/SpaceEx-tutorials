@@ -52,7 +52,7 @@ More information can be found  at the [FAQ](http://spaceex.imag.fr/documentation
 
 
 
-   - To obtain the flattened/composed hybrid automaton in XML format, you can add the argument `--output-system-file new_name`
+   - To obtain the flattened (also known as composed) hybrid automaton in XML format, you can add the argument `--output-system-file new_name`
 
 
 
